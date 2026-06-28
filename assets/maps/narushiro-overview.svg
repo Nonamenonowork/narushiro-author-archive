@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">鳴代市全域概略図</title>
+  <desc id="desc">鳴代市の中心市街、湖東台、旧鳴沢地区、鳴代湖、旧採石場を示す概略地図。</desc>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#d4d0c4" stroke-width="0.7" opacity="0.55"/>
+    </pattern>
+    <filter id="paper">
+      <feTurbulence baseFrequency="0.55" numOctaves="2" seed="11" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="gray"/>
+      <feBlend in="SourceGraphic" in2="gray" mode="multiply" result="blend"/>
+      <feComponentTransfer in="blend"><feFuncA type="table" tableValues="0 0.07"/></feComponentTransfer>
+    </filter>
+    <style>
+      .label{font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;fill:#263033}.small{font-size:17px}.medium{font-size:22px;font-weight:600}.tiny{font-size:14px}.contour{fill:none;stroke:#a9a89e;stroke-width:1.1}.road{fill:none;stroke:#565d5d;stroke-width:5;stroke-linecap:round}.local{fill:none;stroke:#777d7c;stroke-width:2.2;stroke-linecap:round}.oldroad{fill:none;stroke:#8a5449;stroke-width:2.5;stroke-dasharray:8 7}.boundary{fill:none;stroke:#6c7473;stroke-width:2;stroke-dasharray:12 8}.water{fill:#adc7c8;stroke:#627c80;stroke-width:2}.point{fill:#923e36;stroke:#f1eee3;stroke-width:3}.leader{stroke:#596160;stroke-width:1.2}.district{fill:#315b68;font-size:18px;font-weight:700;letter-spacing:2px}.note{fill:#7c4038;font-size:15px}.frame{fill:none;stroke:#3f4747;stroke-width:2}
+    </style>
+  </defs>
+
+  <rect width="1200" height="760" fill="#ebe8dd"/>
+  <rect x="30" y="30" width="1140" height="700" fill="url(#grid)"/>
+  <rect x="30" y="30" width="1140" height="700" class="frame"/>
+
+  <!-- topography -->
+  <path class="contour" d="M46 152C154 58 328 70 405 159S505 300 448 394 237 464 76 391"/>
+  <path class="contour" d="M48 194C164 108 292 115 365 183S446 294 404 354 228 416 73 354"/>
+  <path class="contour" d="M57 544C183 470 308 492 374 578S371 696 290 719"/>
+  <path class="contour" d="M756 63C874 101 985 92 1149 51"/>
+  <path class="contour" d="M730 110C862 157 1010 145 1152 96"/>
+  <path class="contour" d="M842 573C953 512 1080 522 1155 584"/>
+  <path class="contour" d="M818 619C964 561 1088 586 1152 640"/>
+
+  <!-- lake and river -->
+  <path class="water" d="M812 181C906 125 1057 145 1125 236 1171 300 1139 373 1081 407 1018 444 997 505 931 516 864 527 817 475 838 418 859 359 774 319 781 257 784 226 794 198 812 181Z"/>
+  <path d="M784 310C700 324 632 361 563 402 494 443 431 462 352 461" fill="none" stroke="#78999c" stroke-width="9" opacity="0.75"/>
+  <text x="962" y="328" class="label medium" transform="rotate(-14 962 328)">鳴代湖</text>
+
+  <!-- district boundaries -->
+  <path class="boundary" d="M484 54C523 163 521 255 559 353 597 451 659 558 638 715"/>
+  <path class="boundary" d="M753 49C725 155 728 244 752 327 782 430 763 562 707 714"/>
+
+  <!-- roads -->
+  <path class="road" d="M115 659C229 592 301 525 384 463 477 393 566 354 661 323 752 293 842 291 952 309"/>
+  <path class="local" d="M371 462C336 395 325 326 354 258 379 201 425 157 475 118"/>
+  <path class="local" d="M654 326C664 239 647 166 623 88"/>
+  <path class="local" d="M826 381C895 382 973 405 1042 452"/>
+  <path class="oldroad" d="M354 460C298 441 251 409 218 362 187 318 171 264 194 221 215 181 256 151 296 134"/>
+
+  <!-- districts -->
+  <text x="190" y="610" class="label district">旧鳴沢地区</text>
+  <text x="552" y="552" class="label district">中心市街</text>
+  <text x="922" y="570" class="label district">湖東台</text>
+
+  <!-- landmarks -->
+  <circle cx="596" cy="387" r="8" class="point"/>
+  <line x1="596" y1="387" x2="615" y2="365" class="leader"/>
+  <text x="620" y="362" class="label medium">鳴代市役所</text>
+
+  <circle cx="288" cy="418" r="8" class="point"/>
+  <line x1="288" y1="418" x2="240" y2="451" class="leader"/>
+  <text x="111" y="475" class="label medium">宗像寺</text>
+
+  <circle cx="296" cy="134" r="8" class="point"/>
+  <line x1="296" y1="134" x2="318" y2="109" class="leader"/>
+  <text x="323" y="107" class="label medium">旧採石場</text>
+  <text x="323" y="130" class="label note">立入禁止</text>
+
+  <circle cx="356" cy="460" r="7" fill="#315b68" stroke="#ebe8dd" stroke-width="3"/>
+  <text x="371" y="487" class="label small">沢道橋</text>
+
+  <rect x="879" y="388" width="15" height="15" fill="#315b68" transform="rotate(45 886.5 395.5)"/>
+  <text x="901" y="397" class="label small">湖東台集会所</text>
+
+  <text x="188" y="290" class="label note" transform="rotate(-39 188 290)">旧避難路</text>
+  <text x="704" y="307" class="label tiny" transform="rotate(-7 704 307)">県道鳴沢線</text>
+
+  <!-- legend -->
+  <rect x="842" y="54" width="290" height="100" fill="#f3f0e6" stroke="#596160"/>
+  <text x="860" y="80" class="label small" font-weight="700">凡例</text>
+  <line x1="860" y1="102" x2="905" y2="102" class="road"/><text x="920" y="108" class="label tiny">主要道路</text>
+  <line x1="860" y1="128" x2="905" y2="128" class="oldroad"/><text x="920" y="134" class="label tiny">旧避難路</text>
+  <circle cx="1050" cy="102" r="7" class="point"/><text x="1065" y="108" class="label tiny">主要地点</text>
+
+  <!-- north and scale -->
+  <g transform="translate(75 65)"><path d="M18 45L34 8 50 45 34 36Z" fill="#303838"/><text x="27" y="65" class="label small">N</text></g>
+  <g transform="translate(875 685)"><path d="M0 0H200" stroke="#303838" stroke-width="3"/><path d="M0 -6V6M100 -6V6M200 -6V6" stroke="#303838" stroke-width="2"/><text x="-2" y="24" class="label tiny">0</text><text x="88" y="24" class="label tiny">1 km</text><text x="185" y="24" class="label tiny">2 km</text></g>
+
+  <text x="58" y="710" class="label tiny">鳴代市危機管理課資料を基に作成（概略図・縮尺一部省略）</text>
+  <rect width="1200" height="760" filter="url(#paper)" opacity="0.35"/>
+</svg>
