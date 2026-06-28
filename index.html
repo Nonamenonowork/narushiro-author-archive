@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1013">
+  <title>未登録放送｜設定資料庫</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="meeting.css">
+  <link rel="stylesheet" href="meeting-badge.css">
+  <link rel="stylesheet" href="document.css">
+  <link rel="stylesheet" href="visual.css">
+  <link rel="stylesheet" href="visual-grid-extra.css">
+  <link rel="stylesheet" href="plot.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <button class="menu" id="menu" aria-label="目次を開く">☰</button>
+    <div class="brand"><span class="signal"></span><span>未登録放送</span><small>設定資料庫</small></div>
+    <label class="search"><span>⌕</span><input id="search" type="search" placeholder="人物・資料・キーワードを検索" autocomplete="off"><kbd>⌘ K</kbd></label>
+    <div class="status"><span></span> CANON v0.1</div>
+  </header>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="case-number">CASE / NARUSHIRO-2026</div>
+    <nav id="nav">
+      <button class="active" data-view="overview"><span>01</span>概要</button>
+      <button data-view="city"><span>02</span>鳴代市</button>
+      <button data-view="people"><span>03</span>人物</button>
+      <button data-view="incident"><span>04</span>事件</button>
+      <button data-view="evidence"><span>05</span>資料・証拠</button>
+      <button data-view="theories"><span>06</span>三つの仮説</button>
+      <button data-view="chapters"><span>07</span>章構成</button>
+      <button data-view="sound"><span>08</span>音響演出</button>
+      <button data-view="rules"><span>09</span>執筆規則</button>
+      <button data-view="documents"><span>10</span>作中資料</button>
+      <button data-view="visuals"><span>11</span>視覚設計</button>
+      <button data-view="plot"><span>12</span>詳細プロット</button>
+    </nav>
+    <div class="sidebar-foot"><span class="legend fixed">確定</span><span class="legend theory">仮説</span><span class="legend open">非確定</span></div>
+  </aside>
+
+  <main id="main">
+    <section class="view active" id="overview">
+      <div class="hero">
+        <p class="eyebrow">INVESTIGATION ARCHIVE / 2026</p>
+        <h1>記録にない放送が、<br><em>あなたの名前を呼ぶ。</em></h1>
+        <p class="lead">事件は解ける。怪異は解けない。地方紙記者が、聞き手ごとに内容の変わる防災無線と三十七年前の避難事故を追う、約九万字の考察型長編ホラー。</p>
+        <div class="hero-meta"><span>全6章＋序・終章</span><span>90,000字</span><span>物語 60%</span><span>資料体 40%</span></div>
+      </div>
+      <div class="core-rule"><span>最重要原則</span><strong>「設備が作動した事実」と「人が聞いた内容」を分離する。</strong></div>
+      <div class="stats">
+        <article><b>18,000</b><span>鳴代市人口</span></article><article><b>1989.08</b><span>鳴沢避難事故</span></article><article><b>7 + ?</b><span>公式犠牲者数</span></article><article><b>3</b><span>最後まで残す仮説</span></article>
+      </div>
+      <div class="grid two">
+        <article class="panel searchable"><header><span class="tag fixed">確定</span><h2>物語の起点</h2></header><p>市危機管理課職員・相原紗季が、存在しない放送を録音した翌日に失踪する。弟の水城遼が同じ録音を聞くと、姉ではなく自分の名前が呼ばれる。</p></article>
+        <article class="panel searchable"><header><span class="tag open">非確定</span><h2>残す恐怖</h2></header><p>声は誰のものか。放送は失踪の原因か予告か。資料を読む行為は、新たな「聴取」になるのか。</p></article>
+      </div>
+    </section>
+
+    <section class="view" id="city">
+      <div class="section-head"><p>LOCATION FILE</p><h1>鳴代市 <small>なるしろし</small></h1><span class="tag fixed">確定設定</span></div>
+      <div class="map" aria-label="鳴代市概念図">
+        <div class="contour c1"></div><div class="contour c2"></div>
+        <button class="place old" data-place="旧鳴沢地区"><i></i><b>旧鳴沢地区</b><small>寺・採石場・廃子局</small></button>
+        <button class="place center" data-place="中心市街"><i></i><b>中心市街</b><small>市役所・新聞支局</small></button>
+        <button class="place lake" data-place="湖東台"><i></i><b>湖東台</b><small>造成住宅地</small></button>
+        <div class="water">鳴代湖</div><div class="route">旧避難路 · · · · ·</div>
+      </div>
+      <div class="grid three" id="place-details">
+        <article class="panel searchable"><h2>旧鳴沢地区</h2><p>古い集落。夏の特定夜に鐘や拍子木を鳴らす家が残る。回線と商用電源を撤去された子局が一基存在。</p></article>
+        <article class="panel searchable"><h2>中心市街</h2><p>市役所、防災操作卓、資料館、警察署、北嶺日報支局が集中。公的記録が集まり、同時に欠落する場所。</p></article>
+        <article class="panel searchable"><h2>湖東台</h2><p>転入者の多い造成地。旧来の鳴り物を騒音と認識する。近年の失踪報告が相対的に多い。</p></article>
+      </div>
+      <article class="panel searchable"><h2>共同体は一枚岩ではない</h2><div class="table"><div><b>旧住民</b><span>事故の責任・家族の記憶・呼名への恐れ</span></div><div><b>新住民</b><span>資産価値・風評・孤立回避</span></div><div><b>行政</b><span>設備管理責任・合併前記録の不備</span></div><div><b>観光</b><span>祭礼の由来が近年再編集された事実</span></div></div></article>
+    </section>
+
+    <section class="view" id="people">
+      <div class="section-head"><p>PERSONNEL</p><h1>人物ファイル</h1><span>カードを選択して詳細表示</span></div>
+      <div class="people-layout"><div class="people-list" id="people-list"></div><article class="dossier" id="dossier"></article></div>
+    </section>
+
+    <section class="view" id="incident">
+      <div class="section-head"><p>INCIDENT LOG</p><h1>二つの事件</h1><span class="tag fixed">人間側は解明</span></div>
+      <div class="timeline">
+        <article class="searchable"><time>事故以前</time><div><h2>「呼名に応ぜず」</h2><p>夜回り規則、欠けた子守歌、名を呼ぶ古写真。完成された伝説は存在しない。</p></div></article>
+        <article class="searchable"><time>1989.08</time><div><h2>鳴沢避難事故</h2><p>豪雨時、有線放送の指示変更により住民が旧採石場側へ向かい土砂崩れに遭う。公式七名。資料上は八人目が揺らぐ。</p></div></article>
+        <article class="searchable"><time>事故後</time><div><h2>祭礼「声送り」の再編集</h2><p>呼名、夜回り、鳴り物が鎮魂行事として観光向けにまとめられる。</p></div></article>
+        <article class="searchable"><time>2026 夏</time><div><h2>未登録放送と失踪</h2><p>相原紗季が失踪。柏木と久世は防止目的で子局を無許可運用し、旧避難路に沿う音の列を作る。</p></div></article>
+        <article class="searchable"><time>結末</time><div><h2>点検坑で発見</h2><p>遼が子局の負荷順から経路を復元し、紗季を発見。不正は解けるが、個別の声は説明されない。</p></div></article>
+      </div>
+    </section>
+
+    <section class="view" id="evidence">
+      <div class="section-head"><p>EVIDENCE INDEX</p><h1>資料・証拠</h1><span>信頼できる軸と疑う軸を分離</span></div>
+      <div class="filters" id="evidence-filters"><button class="active" data-filter="all">すべて</button><button data-filter="record">公的記録</button><button data-filter="audio">音声</button><button data-filter="testimony">証言</button><button data-filter="media">報道・ネット</button></div>
+      <div class="evidence-grid" id="evidence-grid"></div>
+      <aside class="evidence-detail" id="evidence-detail" aria-hidden="true">
+        <button class="detail-close" id="detail-close" aria-label="詳細を閉じる">×</button>
+        <div id="detail-content"></div>
+      </aside>
+      <div class="detail-backdrop" id="detail-backdrop"></div>
+    </section>
+
+    <section class="view" id="theories">
+      <div class="section-head"><p>THEORY MATRIX</p><h1>三つの仮説</h1><span class="tag theory">複合可能</span></div>
+      <div class="theory-tabs" id="theory-tabs"></div>
+      <article class="theory-detail" id="theory-detail"></article>
+      <div class="matrix-wrap"><table><thead><tr><th>証拠</th><th>A 土地</th><th>B 人為</th><th>C 記録</th></tr></thead><tbody id="matrix"></tbody></table></div>
+    </section>
+
+    <section class="view" id="documents">
+      <div class="section-head"><p>IN-STORY DOCUMENTS</p><h1>作中資料・完成稿</h1><span>本文へそのまま挿入可能</span></div>
+      <div class="document-summary"><b>12</b><span>完成資料</span><b>3</b><span>章をまたぐ相互参照</span><b>1</b><span>共通する第三の音</span></div>
+      <div class="document-list" id="document-list"></div>
+    </section>
+
+    <section class="view" id="visuals">
+      <div class="section-head"><p>VISUAL ARCHIVE SYSTEM</p><h1>視覚資料設計</h1><span>証拠として機能するデザイン</span></div>
+      <div class="visual-principle"><span>原則</span><b>汚れ、訂正、欠落には、必ず作中の発生理由を持たせる。</b></div>
+      <figure class="map-preview"><img src="assets/maps/narushiro-overview.svg" alt="鳴代市全域概略図。旧鳴沢地区、中心市街、湖東台、旧採石場、旧避難路を示す。"><figcaption>NS-M01 鳴代市全域図｜全経路図の共通座標系</figcaption></figure>
+      <div class="visual-preview-grid">
+        <figure class="map-preview"><img src="assets/maps/narusawa-1989-evacuation.svg" alt="1989年鳴沢避難事故の避難経路図。第一指示と変更後経路、通行不能地点、土砂崩れ範囲を示す。"><figcaption>NS-M03 1989年避難経路図</figcaption></figure>
+        <figure class="map-preview dark-preview"><img src="assets/documents/audio-sync-comparison.svg" alt="三録音の同期比較図。共通する環境音と27秒の人声様成分を示す。"><figcaption>NS-D02 三録音同期比較図</figcaption></figure>
+        <figure class="map-preview"><img src="assets/maps/narushiro-speaker-coverage.svg" alt="各防災子局の推定可聴範囲と地形遮蔽域を示す。"><figcaption>NS-M02 防災子局・推定可聴範囲図</figcaption></figure>
+        <figure class="map-preview"><img src="assets/maps/narushiro-2026-route.svg" alt="2026年の祭礼順路、子局作動順、失踪者の推定経路を比較する。"><figcaption>NS-M04 祭礼・失踪経路比較図</figcaption></figure>
+        <figure class="map-preview dark-preview"><img src="assets/documents/broadcast-system.svg" alt="防災無線の六層と行政ログの記録境界を示す。"><figcaption>NS-D01 防災無線系統・記録境界図</figcaption></figure>
+        <figure class="map-preview dark-preview"><img src="assets/documents/evidence-cross-reference.svg" alt="十二資料の引用、参照、記述不一致の関係を示す。"><figcaption>NS-D03 資料相互参照図</figcaption></figure>
+        <figure class="map-preview"><img src="assets/photos/old-n03-inspection.jpg" alt="採石場脇の旧N-03子局記録写真。"><figcaption>NS-P02 旧N-03子局記録写真</figcaption></figure>
+        <figure class="map-preview"><img src="assets/photos/night-watch-undated.jpg" alt="提灯を持つ住民が夜道を歩く年代不明写真。"><figcaption>NS-P01 年代不明の夜回り写真</figcaption></figure>
+      </div>
+      <div class="visual-grid">
+        <article><span>1989</span><h2>旧鳴沢町</h2><p>再生上質紙、和文タイプ、丸形公印、二穴綴じ。別紙三の綴じ穴を物理的欠落として残す。</p></article>
+        <article><span>1998</span><h2>祭礼復元調査</h2><p>大学ノート、青ボールペン、カセットラベル。清書と原話の差を同時に見せる。</p></article>
+        <article><span>2026</span><h2>鳴代市記録</h2><p>白色帳票、等幅ログ、電子署名。怪異らしさではなく実務の不完全さを描く。</p></article>
+      </div>
+      <div class="asset-progress"><h2>制作状況</h2><ol><li class="done">地図・技術図 7点</li><li class="done"><a href="artifacts/index.html" target="_blank">作中資料閲覧室（全12資料）</a></li><li class="done">年代別紙質テクスチャ 3点</li><li class="done">作中記録写真 2点</li></ol></div>
+    </section>
+
+    <section class="view" id="chapters">
+      <div class="section-head"><p>STRUCTURE</p><h1>全体構成</h1><span>合計 90,000字</span></div>
+      <div class="progress"><i style="width:100%"></i></div>
+      <div class="chapter-list" id="chapter-list"></div>
+    </section>
+
+    <section class="view" id="sound">
+      <div class="section-head"><p>SOUND DIRECTION</p><h1>聞こえる恐怖、消える音</h1><span>音量ではなく欠落を描く</span></div>
+      <div class="sound-grid" id="sound-grid"></div>
+      <article class="core-rule"><span>文体規則</span><strong>音を形容する前に、それを聞いた人物が止めた行動を書く。</strong></article>
+    </section>
+
+    <section class="view" id="rules">
+      <div class="section-head"><p>WRITING CONTROL</p><h1>執筆規則</h1><span>チェック状態は端末に保存</span></div>
+      <div class="rules-layout"><article class="panel"><h2>整合性チェック</h2><div class="checklist" id="checklist"></div></article><article class="panel danger"><h2>採用しない方向</h2><ul id="reject-list"></ul></article></div>
+    </section>
+
+    <section class="view" id="plot">
+      <div class="section-head"><p>PLOT DEVELOPMENT ARCHIVE</p><h1>詳細プロット・会議記録</h1><span>24会議 × 90分</span></div>
+      <div class="plot-summary"><div><b>24</b><span>プロット会議</span></div><div><b>2,160</b><span>総会議時間・分</span></div><div><b>8</b><span>物語区分</span></div><div><b>90,000</b><span>想定総字数</span></div></div>
+      <article class="core-rule"><span>プロット原則</span><strong>第6章で人間側を解き、終章では解決ではなく前提だけを揺らす。</strong></article>
+      <div class="plot-tabs" id="plot-tabs"></div>
+      <div class="plot-meetings" id="plot-meetings"></div>
+      <div class="section-head"><p>SCENE BREAKDOWN</p><h1>章別場面設計</h1><span>選択して展開</span></div>
+      <div class="plot-chapters" id="plot-chapters"></div>
+      <section class="clue-table" id="plot-clues"></section>
+    </section>
+
+    <section class="empty" id="empty"><b>該当する項目がありません</b><span>検索語を変更してください。</span></section>
+  </main>
+
+  <div class="toast" id="toast"></div>
+  <script src="meeting-data.js"></script>
+  <script src="plot-data.js"></script>
+  <script src="app.js"></script>
+  <script src="plot.js"></script>
+</body>
+</html>
